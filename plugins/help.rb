@@ -14,8 +14,4 @@ class Help
 	topic 'plugins' do |m, plugin|
 		m.reply(plugin.bot.plugins.map(&:class).join(', '))
 	end
-
-	def plugins
-		bot.plugins.map(&:class).join(', ')
-	end
 end
